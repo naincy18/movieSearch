@@ -1,0 +1,43 @@
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+body{
+     font-family: Arial,sans-serif;
+     background: #111;
+     color: white;
+     min-height: 100vh;
+     padding: 40px;
+}
+.header{
+     text-align: center;
+     color: #aaa;
+     margin-bottom: 30px;
+}
+#movieInput{
+     display:block;
+     width: 400px;
+     max-width: 100%;
+     margin: 0 auto 15px;
+     padding: 12px;
+     font-size: 16px;
+     border: none;
+     border-radius: 6px;
+}
+#searchBtn {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#movieContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
