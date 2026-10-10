@@ -41,3 +41,51 @@ body{
     max-width: 1200px;
     margin: auto;
 }
+
+#movieContainer {
+    margin-top: 30px;
+}
+
+.movie-card {
+    display: flex;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #222222;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.movie-card img {
+    width: 200px;
+    height: fit-content;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h2 {
+    margin-top: 0;
+}
+
+.movie-info p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .movie-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card img {
+        width: 160px;
+    }
+}
+
